@@ -173,7 +173,7 @@ const CuisineSelector = () => {
                 marginBottom: Cuisine.length - 1 === index ? 100 : 0,
               }}
               onPress={async () => {
-                AsyncStorage.setItem("@cuisine", item.name.toLocaleLowerCase());
+                AsyncStorage.setItem("@cuisine", item.name);
                 navigation.dispatch(
                   CommonActions.reset({
                     index: 1,
